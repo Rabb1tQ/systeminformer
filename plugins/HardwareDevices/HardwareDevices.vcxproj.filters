@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{47359E56-A930-4DDC-A651-E2E99D48E957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4965CB7A-371A-4B22-AC3F-E70DC77C5D24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{00475F04-2369-42D8-9A52-9DB77E37AE62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Disk">
+      <UniqueIdentifier>{1ccecf79-cd82-4ae5-b891-64a0a2d18e8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{c7c48d78-64cd-4559-87c1-74e2141dcd2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RAPL">
+      <UniqueIdentifier>{b8808621-a8f2-4a5f-a996-2e576e66ac45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{54c0ff15-7e21-40df-9fd7-8883d37008fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Devices">
+      <UniqueIdentifier>{ca3ebda4-541a-4869-9479-40380027e339}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="devices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prpsh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fmifs.h">
+      <Filter>Source Files\Disk</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diskoptions.c">
+      <Filter>Source Files\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="ndis.c">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="storage.c">
+      <Filter>Source Files\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="adapter.c">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="netgraph.c">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="netoptions.c">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="netdetails.c">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="disk.c">
+      <Filter>Source Files\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="diskgraph.c">
+      <Filter>Source Files\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="diskdetails.c">
+      <Filter>Source Files\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="disknotify.c">
+      <Filter>Source Files\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="prpsh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="power.c">
+      <Filter>Source Files\RAPL</Filter>
+    </ClCompile>
+    <ClCompile Include="powergraph.c">
+      <Filter>Source Files\RAPL</Filter>
+    </ClCompile>
+    <ClCompile Include="poweroptions.c">
+      <Filter>Source Files\RAPL</Filter>
+    </ClCompile>
+    <ClCompile Include="gpu.c">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="gpugraph.c">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="gpuoptions.c">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics.c">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="gpunodes.c">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="gpudetails.c">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="devicetree.c">
+      <Filter>Source Files\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="deviceprops.c">
+      <Filter>Source Files\Devices</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HardwareDevices.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

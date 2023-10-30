@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5F0D72C4-8319-4B61-9E13-6084B680EB90}</ProjectGuid>
+    <RootNamespace>HardwareDevices</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>HardwareDevices</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Plugins.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalDependencies>cfgmgr32.lib;iphlpapi.lib;wlanapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>cfgmgr32.dll;iphlpapi.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>cfgmgr32.lib;iphlpapi.lib;wlanapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>cfgmgr32.dll;iphlpapi.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Link>
+      <AdditionalDependencies>cfgmgr32.lib;iphlpapi.lib;wlanapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>cfgmgr32.dll;iphlpapi.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <AdditionalDependencies>cfgmgr32.lib;iphlpapi.lib;wlanapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>cfgmgr32.dll;iphlpapi.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>cfgmgr32.lib;iphlpapi.lib;wlanapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>cfgmgr32.dll;iphlpapi.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Link>
+      <AdditionalDependencies>cfgmgr32.lib;iphlpapi.lib;wlanapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>cfgmgr32.dll;iphlpapi.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="adapter.c" />
+    <ClCompile Include="deviceprops.c" />
+    <ClCompile Include="devicetree.c" />
+    <ClCompile Include="diskdetails.c" />
+    <ClCompile Include="disknotify.c" />
+    <ClCompile Include="gpu.c" />
+    <ClCompile Include="gpudetails.c" />
+    <ClCompile Include="gpugraph.c" />
+    <ClCompile Include="gpunodes.c" />
+    <ClCompile Include="gpuoptions.c" />
+    <ClCompile Include="graphics.c" />
+    <ClCompile Include="netdetails.c" />
+    <ClCompile Include="diskgraph.c" />
+    <ClCompile Include="diskoptions.c" />
+    <ClCompile Include="disk.c" />
+    <ClCompile Include="netgraph.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="ndis.c" />
+    <ClCompile Include="netoptions.c" />
+    <ClCompile Include="power.c" />
+    <ClCompile Include="powergraph.c" />
+    <ClCompile Include="poweroptions.c" />
+    <ClCompile Include="prpsh.c" />
+    <ClCompile Include="storage.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="devices.h" />
+    <ClInclude Include="fmifs.h" />
+    <ClInclude Include="prpsh.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HardwareDevices.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

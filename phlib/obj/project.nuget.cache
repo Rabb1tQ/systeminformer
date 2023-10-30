@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "j5SFfKs3M3EtIBNyp+z76U5L9KS2wG1cI+2N3JTA9+xt8rn7sC5Tn/o6UcJfTsjNhZ8oEd2ZImYq28hbxksPSA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\test\\Desktop\\systeminformer-master\\phlib\\phlib.vcxproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\test\\.nuget\\packages\\microsoft.build.tasks.git\\1.1.1\\microsoft.build.tasks.git.1.1.1.nupkg.sha512",
+    "C:\\Users\\test\\.nuget\\packages\\microsoft.sourcelink.common\\1.1.1\\microsoft.sourcelink.common.1.1.1.nupkg.sha512",
+    "C:\\Users\\test\\.nuget\\packages\\microsoft.sourcelink.github\\1.1.1\\microsoft.sourcelink.github.1.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

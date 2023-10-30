@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "bqqTe5axSXcc1HmyXV4nidJjVaSrc+h4Vmyl+XzSQUU0oLHw1SAKtfpfjFhZDdhkoxIEQ3svaoLeo5By/CdLGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\test\\Desktop\\systeminformer-master\\tools\\peview\\peview.vcxproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\test\\.nuget\\packages\\microsoft.build.tasks.git\\1.1.1\\microsoft.build.tasks.git.1.1.1.nupkg.sha512",
+    "C:\\Users\\test\\.nuget\\packages\\microsoft.sourcelink.common\\1.1.1\\microsoft.sourcelink.common.1.1.1.nupkg.sha512",
+    "C:\\Users\\test\\.nuget\\packages\\microsoft.sourcelink.github\\1.1.1\\microsoft.sourcelink.github.1.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
